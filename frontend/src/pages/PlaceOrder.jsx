@@ -97,7 +97,7 @@ const PlaceOrder = () => {
             switch (method) {
                 case 'cod':
                     const response = await axios.post(
-                        `http://localhost:7008/api/order/place`,
+                        `https://final-backend-two.vercel.app/api/order/place`,
                         orderData,
                         { headers: { Authorization: `Bearer ${token}` } }
                     );
@@ -114,7 +114,7 @@ const PlaceOrder = () => {
                 case 'razorpay':
                     try {
                         const responseRazorpay = await axios.post(
-                            "http://localhost:7008/api/order/razorpay",
+                            "https://final-backend-two.vercel.app/api/order/razorpay",
                             orderData,
                             { headers: { Authorization: `Bearer ${token}` } }
                         );
