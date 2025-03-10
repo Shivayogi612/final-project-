@@ -44,7 +44,6 @@ const Cart = () => {
 
   if (!productData) return null;
 
-  // Calculate discounted price (25% OFF)
   const discountedPrice = (productData.price * 0.75).toFixed(2);
 
   return (
