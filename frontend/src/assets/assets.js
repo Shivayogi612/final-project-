@@ -63,6 +63,11 @@ import new_img3 from './new_img3.png'
 import new_img4 from './new_img4.png'
 import new_img5 from './new_img5.png'
 import new_img6 from './new_img6.png'
+import newimage_1 from './newimage_1.png'
+import newimage_2 from './newimage_2.png'
+import newimage_3 from './newimage_3.png'
+
+
 
 
 
@@ -129,6 +134,19 @@ export const products = [
         sizes: ["S", "M", "L"],
         bestseller: true
     },
+
+    {
+    "_id": "bbbbb",
+    "name": "Women Floral Printed Satin Dress",
+    "description": "A stylish and elegant satin dress with a floral print, featuring a wrap-style waist tie and three-quarter sleeves. Perfect for formal and casual outings.",
+    "price": 1499,
+    "image": [newimage_1,newimage_2,newimage_3],
+    "category": "Women",
+    "subCategory": "Dresses",
+    "sizes": ["S", "M", "L", "XL"],
+    "bestseller": true
+}
+
 
     {
         _id: "p001",
