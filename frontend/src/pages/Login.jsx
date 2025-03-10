@@ -25,7 +25,7 @@ const Login = () => {
     try {
       if (currentState === "Sign Up") { 
         console.log("Attempting Signup...");
-        const response = await axios.post(`http://localhost:7008/api/user/register`, { 
+        const response = await axios.post(`https://final-backend-two.vercel.app/api/user/register`, { 
           name, 
           email, 
           password 
@@ -38,7 +38,7 @@ const Login = () => {
       } else {
         console.log("Attempting Login...");
 
-        const response = await axios.post(`http://localhost:7008/api/user/login`, { 
+        const response = await axios.post(`https://final-backend-two.vercel.app/api/user/login`, { 
           email, 
           password 
         });
