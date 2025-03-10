@@ -1,7 +1,7 @@
 import React from 'react'
 import { ShopContext } from '../context/shopcontext'
 import { useContext } from 'react'
-import './Searchbar.css'
+import './searchbar.css'
 import { assets } from '../assets/assets'
 import { useLocation } from 'react-router-dom'
 import { useState } from 'react'
