@@ -9,6 +9,45 @@ const Home = () => {
     <div>
         <Hero/>
         <LatestCollection/>
+      <div
+        style={{
+          width: "100%",
+          overflow: "hidden",
+          background: "#ff0000",
+          color: "#fff",
+          fontSize: "20px",
+          fontWeight: "bold",
+          padding: "10px 0",
+          whiteSpace: "nowrap",
+          position: "relative",
+        }}
+      >
+        <div
+          style={{
+            display: "inline-block",
+            whiteSpace: "nowrap",
+            animation: "slideText 10s linear infinite",
+          }}
+        >
+          <p>
+            🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥
+          </p>
+        </div>
+      </div>
+
+      {/* Animation Keyframes (Injected in the Page) */}
+      <style>
+        {`
+          @keyframes slideText {
+            from {
+              transform: translateX(100%);
+            }
+            to {
+              transform: translateX(-100%);
+            }
+          }
+        `}
+      </style>
         <Bestseller/>
         <OurPolicy/>
     </div>
