@@ -47,8 +47,8 @@ const Login = () => {
         const token = response.data.token;
         if (token) {
           localStorage.setItem("token", token);
-          setToken(token); // ✅ Save token to context
-          navigate("/"); // ✅ Redirect after login
+          setToken(token);
+          navigate("/"); 
         } else {
           alert("Login failed. Please check your credentials.");
         }
