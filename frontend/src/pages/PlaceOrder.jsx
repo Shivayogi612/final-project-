@@ -45,7 +45,7 @@ const PlaceOrder = () => {
                 console.log("Razorpay Payment Response:", response);
                 try {
                     const { data } = await axios.post(
-                        "http://localhost:7008/api/order/verifyRazorpay",
+                        "https://final-backend-two.vercel.app/api/order/verifyRazorpay",
                         { ...response, userId, email },
                         {
                             headers: { Authorization: `Bearer ${token}` }
@@ -90,7 +90,7 @@ const PlaceOrder = () => {
                 address: formData,
                 items: orderItems,
                 amount: getCartAmount() + delivery_fee,
-                userId, // ✅ Ensure correct userId is passed
+                userId,
                 email: formData.email
             };
 
