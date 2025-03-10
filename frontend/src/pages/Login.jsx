@@ -7,7 +7,7 @@ import { ShopContext } from "../context/shopcontext"; // ✅ Import Context
 const Login = () => {
   const [currentState, setCurrentState] = useState("login"); 
   const { token, setToken } = useContext(ShopContext);
-  const navigate = useNavigate(); // ✅ Navigation
+  const navigate = useNavigate(); //
 
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
