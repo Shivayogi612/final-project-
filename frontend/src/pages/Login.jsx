@@ -74,7 +74,6 @@ const Login = () => {
       <input onChange={(e) => setPassword(e.target.value)} value={password} type="password" className="logininput1" placeholder="Password" required />
 
       <div className="login2">
-        <p className="loginp2">Forgot your password</p>
         {currentState === "login" ? (
           <p onClick={() => setCurrentState("Sign Up")} className="loginp3">Create account</p>
         ) : (
