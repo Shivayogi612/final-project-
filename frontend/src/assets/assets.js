@@ -136,16 +136,16 @@ export const products = [
     },
 
     {
-    "_id": "bbbbb",
-    "name": "Women Floral Printed Satin Dress",
-    "description": "A stylish and elegant satin dress with a floral print, featuring a wrap-style waist tie and three-quarter sleeves. Perfect for formal and casual outings.",
-    "price": 1499,
-    "image": [newimage_1,newimage_2,newimage_3],
-    "category": "Women",
-    "subCategory": "Dresses",
-    "sizes": ["S", "M", "L", "XL"],
-    "bestseller": true
-}
+    _id: "bbbbb",
+    name: "Women Floral Printed Satin Dress",
+    description: "A stylish and elegant satin dress with a floral print, featuring a wrap-style waist tie and three-quarter sleeves. Perfect for formal and casual outings.",
+    price: 1499,
+    image: [newimage_1,newimage_2,newimage_3],
+    category: "Women",
+    subCategory: "Dresses",
+    sizes: ["S", "M", "L", "XL"],
+    bestseller: true
+},
 
 
     {
