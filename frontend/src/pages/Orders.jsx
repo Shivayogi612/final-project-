@@ -14,7 +14,7 @@ const Orders = () => {
 
       console.log(`Fetching orders: ${backendUrl}/api/order/user`);
       
-      const response = await axios.post(`http://localhost:7008/api/order/user`, {}, {
+      const response = await axios.post(`https://final-backend-two.vercel.app/api/order/user`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -52,7 +52,6 @@ const Orders = () => {
 
       <div>
         {orderData.length > 0 ? orderData.map((item, index) => {
-          // ✅ Apply the same discount logic as Cart.js (25% OFF)
           const discountedPrice = (item.price * 0.75).toFixed(2);
 
           return (
@@ -62,7 +61,6 @@ const Orders = () => {
                 <div>
                   <p className='ordername'>{item.name}</p>
                   <div className='ordername1'>
-                    {/* ✅ Show Only Discounted Price */}
                     <p className='discounted-price'>{currency}{discountedPrice}</p>
                     <p>Quantity: {item.quantity || 1}</p>
                     <p>Size: {item.size}</p>
