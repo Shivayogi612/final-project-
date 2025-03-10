@@ -13,10 +13,9 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
-  // ✅ Redirect logged-in users away from Login page
   useEffect(() => {
     if (token) {
-      navigate("/"); // ✅ Redirect to homepage if already logged in
+      navigate("/");
     }
   }, [token, navigate]);
 
