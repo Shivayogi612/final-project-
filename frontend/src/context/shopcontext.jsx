@@ -45,7 +45,7 @@ const ShopContextProvider = (props) => {
         if (token) {
             try {
                 console.log(`Adding to cart: ${backendUrl}/api/cart/add`, { itemId, size });
-                await axios.post(`http://localhost:7008/api/cart/add`, { itemId, size }, {
+                await axios.post(`https://final-backend-two.vercel.app/api/cart/add`, { itemId, size }, {
                     headers: { 
                         Authorization: `Bearer ${token}` // ✅ Correct way to send token
                     }
@@ -90,7 +90,7 @@ const ShopContextProvider = (props) => {
         if (token) {
             try {
                 console.log(`updating cart: ${backendUrl}/api/cart/update`, { itemId, size, quantity });
-                await axios.post(`http://localhost:7008/api/cart/update`, { itemId, size, quantity }, {
+                await axios.post(`https://final-backend-two.vercel.app/api/cart/update`, { itemId, size, quantity }, {
                     headers: { 
                         Authorization: `Bearer ${token}` // ✅ Correct way to send token
                     }
@@ -137,7 +137,7 @@ const getCartAmount = () => {
      const getUserCart = async (token) =>{
         try {
             console.log(`updating cart: ${backendUrl}/api/cart/get`, {  });
-         const response =    await axios.post(`http://localhost:7008/api/cart/get`, {  }, {
+         const response =    await axios.post(`https://final-backend-two.vercel.app/api/cart/get`, {  }, {
                 headers: { 
                     Authorization: `Bearer ${token}` // ✅ Correct way to send token
                 }
