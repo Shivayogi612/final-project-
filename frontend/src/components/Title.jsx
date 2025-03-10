@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./title.css";
+import "./Title.css";
 import gsap from "gsap";
 
 const Title = ({ text1, text2 }) => {
