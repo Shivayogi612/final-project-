@@ -20,7 +20,7 @@ const Contact = () => {
     setStatus("Sending...");
 
     try {
-      const response = await axios.post("http://localhost:7008/api/contact", formData);
+      const response = await axios.post("https://final-backend-two.vercel.app/api/contact", formData);
       if (response.data.success) {
         setStatus("✅ Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
@@ -93,10 +93,7 @@ const Contact = () => {
             <p>+123 456 7890</p>
           </div>
           
-          <div className="info-box">
-            <span>⏰</span>
-            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-          </div>
+
         </div>
       </div>
     </div>
