@@ -1,0 +1,62 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 24rem; /* sm:max-w-96 (96 = 24rem) */
+    margin: auto;
+    margin-top: 3.5rem; /* mt-14 (14 * 0.25rem = 3.5rem) */
+    gap: 1rem; /* gap-4 (4 * 0.25rem = 1rem) */
+    color: #1f2937;
+}
+
+
+.login1{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 (2 * 0.25rem = 0.5rem) */
+    margin-bottom: 0.5rem; /* mb-2 */
+    margin-top: 2.5rem;
+}
+
+.loginp1{
+  font-family: 'Prata', serif; /* Ensure you have the Prata font imported */
+  font-size: 1.875rem; 
+}
+
+.loginhr{
+    border: none;
+  height: 1.5rem; /* Assuming `h-[1.5]` refers to 1.5rem (24px) */
+  width: 2rem; /* 8 * 0.25rem = 2rem (32px) */
+  background-color: #1f2937;
+}
+
+.logininput1{
+    width: 100%; /* Full width */
+    padding: 0.5rem;
+    border: 2px solid #1f2937; 
+}
+
+.login2{
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem; /* Equivalent to Tailwind's text-sm */
+    margin-top: -8px; 
+}
+
+.loginp2{
+    cursor: pointer;
+}
+
+.loginp3{
+    cursor: pointer;
+}
+
+.loginbtn{
+    background-color: black;
+  color: white;
+  font-weight: 300; /* Light font weight */
+  padding: 8px 32px; /* px-8 (left & right), py-2 (top & bottom) */
+  margin-top: 16px;
+}

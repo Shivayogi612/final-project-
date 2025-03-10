@@ -1,0 +1,172 @@
+.Cart{
+    border-top: 1px solid #e5e7eb; /* Default Tailwind gray-200 */
+    padding-top: 56px;
+}
+
+.Carttitle{
+    font-size: 1.5rem; /* 24px */
+    margin-bottom: 12px;
+    margin-left: 150px;
+}
+
+.Cartdisplay{
+    padding-bottom: 16px;
+    border-top: 1px solid #e5e7eb; /* Default Tailwind border color */
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151; /* Tailwind gray-700 */
+    display: grid;
+    grid-template-columns: 4fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+      }
+      
+      /* Responsive adjustment for small screens */
+      @media (min-width: 640px) { /* sm breakpoint */
+        .Cartdisplay {
+          grid-template-columns: 4fr 2fr 0.5fr;
+          margin-left: 50px;
+        }
+        .Carttitle{
+            margin-left: 50px;
+
+        }
+      }
+
+      .Cartdisplay1{
+        display: flex;
+        align-items: flex-start;
+        gap: 24px; 
+      }
+
+      .Cartimage {
+        width: 64px; /* Default width */
+      }
+      
+      /* Responsive adjustment for small screens */
+      @media (min-width: 640px) { /* Tailwind 'sm' breakpoint */
+        .Cartimage {
+          width: 80px;
+        }
+      }
+      
+      .Cartp1 {
+        font-size: 12px; /* Default font size */
+        font-weight: 500; /* Medium font weight */
+      }
+      
+      /* Responsive adjustment for small screens */
+      @media (min-width: 640px) { /* Tailwind 'sm' breakpoint */
+        .Cartp1 {
+          font-size: 18px;
+        }
+      }
+
+      .Cartdisplay2{
+        display: flex;          /* Enables flexbox */
+        align-items: center;    /* Centers items vertically */
+        gap: 20px;              /* Spacing between items (5 * 4px = 20px) */
+        margin-top: 8px; 
+      }
+
+      .Productsize{
+            padding: 0 8px; /* Default padding (px-2 equivalent) */
+            border: 1px solid #d1d5db; /* Default border */
+            background-color: #f8fafc; /* Equivalent to bg-slate-50 */
+          }
+          
+          /* Apply styles for small screens (sm) */
+          @media (min-width: 640px) {
+            .Productsize {
+              padding: 4px 12px; /* sm:px-3 and sm:py-1 */
+            }
+          }
+          
+          .quantity1 {
+            border: 1px solid black; /* Default border */
+            max-width: 40px; /* Equivalent to max-w-10 (10 * 4px) */
+            padding: 4px; /* Equivalent to px-1 and py-1 */
+          }
+          
+          /* Apply styles for small screens (sm) */
+          @media (min-width: 640px) {
+            .quantity1 {
+              max-width: 80px; /* Equivalent to max-w-20 (20 * 4px) */
+              padding: 4px 8px; /* sm:px-2 and sm:py-1 */
+            }
+          }
+
+          .bin {
+            width: 1rem; /* 4 in Tailwind (1rem = 16px) */
+            margin-right: 1rem; /* 4 in Tailwind */
+            cursor: pointer;
+        }
+        
+        /* For Small Screens (sm) */
+        @media (min-width: 640px) {
+            .bin {
+                width: 1.25rem; /* 5 in Tailwind (1.25rem = 20px) */
+            }
+        }
+
+        .carttotal{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .carttotal1{
+                width: 100%;
+              }
+              
+              @media (min-width: 640px) { /* 640px is the breakpoint for 'sm' in Tailwind */
+                .carttotal1 {
+                  width: 450px;
+                }
+              }
+
+
+              .btn{
+                width: 100%;
+                text-align: end;
+              }
+
+              .Checkout{                    
+                background-color: black;
+                margin-right: 61px;
+                margin-top: 20px;
+                color: white;
+                font-size: 0.875rem; /* Equivalent to text-sm */
+                padding: 0.75rem 2rem; /* Equivalent to px-8 py-3 */
+            }
+
+            @media (min-width: 640px) { /* 640px is the breakpoint for 'sm' in Tailwind */
+                .Checkout{                    
+                    background-color: black;
+                    margin-right: 130px;
+                    margin-top: 20px;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 0.875rem; /* Equivalent to text-sm */
+                    padding: 0.75rem 2rem; /* Equivalent to px-8 py-3 */
+                }
+              }
+
+                  
+              
+        
+        
+              .original-price {
+                color: gray;
+                font-size: 14px;
+                text-decoration: line-through;
+                margin-right: 8px;
+              }
+              
+              .discounted-price {
+                color: #d32f2f; /* Red color for discounts */
+                font-weight: bold;
+                font-size: 16px;
+              }
+              

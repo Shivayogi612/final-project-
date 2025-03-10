@@ -1,0 +1,48 @@
+.title {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.titlep1 {
+  color: #2c3e50; /* Rich dark gray-blue */
+  font-size: 4vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: letter-spacing 0.3s ease-in-out;
+  position: relative;
+}
+
+.titlespan {
+  color: #e67e22; /* Luxurious orange accent */
+  font-weight: 700;
+}
+
+.titlep2 {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #e67e22; /* Matching accent color */
+  transition: width 0.4s ease-in-out;
+  transform: translateX(-50%);
+}
+
+/* Hover Effect */
+.title:hover .titlep2 {
+  width: 100%;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .titlep1 {
+    font-size: 2.5vw;
+  }
+
+  .titlep2 {
+    height: 3px;
+  }
+}

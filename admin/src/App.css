@@ -1,0 +1,17 @@
+.app{
+  min-height: 100vh; }
+
+  .sidebar{
+    display: flex;  /* Enables Flexbox */
+    width: 100%;  
+  }
+
+  .route{
+    width: 70%;
+    margin-left: max(5vw, 25vw);
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #4B5563;
+    font-size: 1rem;
+  }

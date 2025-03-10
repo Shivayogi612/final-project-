@@ -1,0 +1,66 @@
+.latestcollection{
+    margin:2.5rem ;
+    z-index: -8;
+}
+
+.latestcollection1{
+    text-align: center; /* text-center = Centers text */
+  padding-top: 2rem; /* py-8 = 32px */
+  padding-bottom: 2rem; /* py-8 = 32px */
+  font-size: 1.875rem;
+  z-index: -8;
+
+}
+
+.latestp1 {
+    width: 75%; /* w-3/4 = 75% of the parent width */
+    margin: auto; /* m-auto = Centers the element horizontally */
+    font-size: 0.75rem; /* text-xs = 12px */
+  }
+  
+  /* On small screens (640px and above), increase font size */
+  @media (min-width: 640px) {
+    .latestp1 {
+      font-size: 0.875rem; /* sm:text-sm = 14px */
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* On medium screens (768px and above), increase font size */
+  @media (min-width: 768px) {
+    .latestp1 {
+      font-size: 1rem; /* md:text-base = 16px */
+    }
+  }
+
+  .renderproduct {
+    display: grid; /* Enables CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* grid-cols-2 = 2 equal columns */
+    gap: 1rem; /* gap-4 = 16px */
+    row-gap: 1.5rem; /* gap-y-6 = 24px */
+  }
+  
+  /* On small screens (640px and above), set 3 columns */
+  @media (max-width: 640px) {
+    .renderproduct {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+
+  
+  /* On medium screens (768px and above), set 4 columns */
+  @media (min-width: 768px) {
+    .renderproduct {
+      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-4 */
+    }
+  }
+  
+  /* On large screens (1024px and above), set 5 columns */
+  @media (min-width: 1024px) {
+    .renderproduct {
+      grid-template-columns: repeat(5, 1fr); 
+      margin-left: 20px;/* lg:grid-cols-5 */
+    }
+  }
+  

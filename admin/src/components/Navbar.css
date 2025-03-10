@@ -1,0 +1,40 @@
+.logoimg{
+    width: max(10%, 80px);
+
+}
+
+.logoutbtn{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(255, 56, 86);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.logoutbtn:hover{
+    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+
+}
+
+.logoutbtn:active{
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+.nav{
+    display: flex;            /* Enables Flexbox */
+    align-items: center;       /* Aligns items vertically */
+    justify-content: space-between; /* Places items at the start & end */
+    padding-top: 0.5rem;       /* Equivalent to Tailwind's py-2 */
+    padding-bottom: 0.5rem;  
+    padding-left: 4%;          /* Equivalent to Tailwind's px-[4%] */
+    padding-right: 4%;
+}

@@ -1,0 +1,32 @@
+.productlistp{
+    margin-top: 2vw;
+}
+
+.productlist{
+        display: flex; /* Equivalent to 'flex' */
+        flex-direction: column; /* Equivalent to 'flex-col' */
+        gap: 0.5rem; /* Equivalent to 'gap-2' (2 * 0.25rem = 0.5rem or 8px) */
+    }
+
+    .pp{
+            display: none; /* Equivalent to 'hidden' */
+            align-items: center; /* Equivalent to 'items-center' */
+            padding: 4px 8px; /* Equivalent to 'py-1 px-2' (1rem = 16px, so 0.25rem = 4px) */
+            border: 1px solid #e5e7eb; /* Equivalent to 'border' (default Tailwind border color) */
+            background-color: #f3f4f6; /* Equivalent to 'bg-gray-100' */
+            font-size: 0.875rem; /* Equivalent to 'text-sm' (14px) */
+        }
+        
+        @media (min-width: 768px) { /* Equivalent to 'md:' */
+            .pp {
+                display: grid; /* Equivalent to 'md:grid' */
+                width: 1000px;
+                grid-template-columns: 1fr 3fr 1fr 1fr 1fr; /* Equivalent to 'grid-cols-[1fr_3fr_1fr_1fr_1fr]' */
+            }
+        }
+
+        .imggg{
+            width: 3vw;
+        }
+         
+    

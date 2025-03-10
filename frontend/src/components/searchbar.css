@@ -1,0 +1,73 @@
+.searchbar {
+    border-top: 1px solid #e5e7eb; 
+    border-bottom: 1px solid #e5e7eb; 
+    background-color: #f9fafb; 
+    text-align: center; 
+}
+
+.searchbar1{
+  display: inline-flex;           
+  align-items: center;
+  width: 50%;
+  gap: 5vw;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 2px solid #ccc; /* Cleaner border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 5px 15px;
+  background-color: #fff;                        
+          }
+      
+      @media (min-width: 640px) {
+        .searchbar1 {
+          width: 50%;                     
+        }
+        .searchbar1{
+          display: inline-flex;           
+          align-items: center;
+          width: 50%;
+          height: 30px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          border: 2px solid #ccc; /* Cleaner border */
+          border-radius: 25px; /* Rounded corners */
+          padding: 5px 15px;
+          background-color: #fff;  
+      }
+    }
+      .searchbar2{
+        flex: 1; /* Takes up available space */
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 10px;
+        background: transparent;
+      }
+
+      .search1{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+
+      .search2{
+        display: inline; /* Makes the element inline */
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        margin-left: 80px;
+        margin-top: 10px;
+      }
+
+      @media (min-width: 640px) {
+        .search1{
+          display: inline; /* Makes the element inline */
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+        }
+      }
+      
+

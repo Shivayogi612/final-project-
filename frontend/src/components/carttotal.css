@@ -1,0 +1,45 @@
+.carttotal{
+    width: 90%;
+    margin-right: 100px;
+}
+
+.carttotal1{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    
+
+}
+
+@media (min-width: 640px) {
+    .carttotal1 {
+        font-size: 1.5rem;
+    margin-right: 50px;
+  }
+
+  .carttotal{
+    width: 100%;
+    margin-right: 100px;
+}
+
+}
+
+.carttotal2{
+    display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Equivalent to gap-2 */
+  font-size: 0.875rem;
+  border: 2px solid black;
+  padding: 20px;
+
+
+}
+
+.carttotal3{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+hr{
+display: none;
+}

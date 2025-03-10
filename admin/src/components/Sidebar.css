@@ -1,0 +1,56 @@
+.additemp{
+        display: none; /* Equivalent to Tailwind's hidden (default: hidden on all screens) */
+      }
+
+      .hello{
+        text-decoration: none;
+        display: flex;                /* Enables Flexbox */
+        align-items: center;          /* Aligns items vertically in the center */
+        gap: 0.75rem;
+        border: 2px solid #d1d5db;    /* Equivalent to Tailwind's border-gray-300 */
+        margin-bottom: 20px;           /* Removes the right border */
+        padding: 0.2rem 0.75rem;      /* Equivalent to px-3 (0.75rem) & py-2 (0.5rem) */
+        border-radius: 0.25rem; 
+      }
+      
+      @media (min-width: 768px) { /* Equivalent to md: (medium screens and above) */
+        .additemp {
+          display: block;
+          text-decoration: none; 
+        }
+        .hello{
+            text-decoration: none;
+            display: flex;                /* Enables Flexbox */
+            align-items: center;          /* Aligns items vertically in the center */
+            gap: 0.75rem;
+            width: 190px;                 /* Equivalent to Tailwind's gap-3 (3 × 0.25rem = 0.75rem) */
+            border: 2px solid #d1d5db;    /* Equivalent to Tailwind's border-gray-300 */
+            margin-bottom: 20px;           /* Removes the right border */
+            padding: 0.2rem 0.75rem;      /* Equivalent to px-3 (0.75rem) & py-2 (0.5rem) */
+            border-radius: 0.25rem; 
+          }
+      }
+
+     
+
+      .addimg{
+        width: 1.25rem;  /* Equivalent to Tailwind's w-5 (5 * 0.25rem) */
+        height: 1.25rem;
+      }
+
+      .sidebarr{
+        display: flex;        /* Enables Flexbox */
+       flex-direction: column; /* Stacks children vertically */
+       gap: 1rem;            /* Default gap (depends on Tailwind’s base styles) */
+       padding-top: 1.5rem;  /* Equivalent to Tailwind's pt-6 (6 × 0.25rem = 1.5rem) */
+       padding-left:100%;    /* 20% left padding */
+       font-size: 15px;   
+      }
+
+.sidebar{
+    width: 18%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+

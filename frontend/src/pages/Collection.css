@@ -1,0 +1,178 @@
+.collectionfilter {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically by default */
+    gap: 0.25rem; /* gap-1 = 4px */
+    padding-top: 2.5rem; /* pt-10 = 40px */
+    
+    border-top: 1px solid rgb(218, 218, 218) ; /* border-t = Adds a top border */
+  }
+  
+  /* On small screens (640px and above), switch to row layout and increase gap */
+  @media (min-width: 640px) {
+    .collectionfilter {
+      flex-direction: row; /* Aligns items in a row */
+      gap: 2.5rem; /* sm:gap-10 = 40px */
+    }
+  }
+  
+  .filter1{
+    min-width: 4vw;
+  }
+
+  .filterp1{
+    margin-top: 0.5rem; /* my-2 = 8px (top) */
+    margin-bottom: 20px; /* my-2 = 8px (bottom) */
+    font-size: 1.25rem; /* text-xl = 20px */
+    display: flex; /* flex = Enables flexbox */
+    align-items: center; /* items-center = Aligns items vertically */
+    cursor: pointer; /* cursor-pointer = Changes cursor to pointer */
+    gap: 0.5rem; 
+    margin-left: 20px;
+  }
+
+  .filter-box {
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+    padding-left: 20px;
+    padding-bottom: 20px; /* pl-5 */
+    padding-top: 12px; /* py-3 */ /* py-3 */
+    display: none; /* Initially hidden */
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+  
+  .show {
+    display: block; /* Show when active */
+  }
+  
+  @media (min-width: 640px) { /* Equivalent to sm:block */
+    .filter-box {
+      display: block !important;
+    }
+    .filter1{
+        min-width: 18vw;
+        margin-left: 70px;
+    }
+  }
+
+  .filterboxp1{
+    margin-bottom: var(--mb-value, 0);
+  font-size: 5.2vw; 
+  font-weight: 500;
+  }
+
+  .Category1{
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    font-size: 5.1vw; /* text-sm = 14px */
+    font-weight: 300; /* font-light = Light font weight */
+    color: #374151; 
+  }
+
+  .Category1p1{
+    display: flex; /* Enables flexbox */
+    gap: 0.1rem;
+    margin-bottom: 4px;
+  }
+
+  .Category1input1{
+    width: 0.90rem; /* w-3 = 12px */
+  }
+  
+  .icon {
+    height: 12px; /* Equivalent to h-3 */
+  }
+  
+  .hidden-sm {
+    display: block; /* Equivalent to sm:hidden */
+  }
+  
+  /* Rotate when active */
+  .rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Ensure visibility on small screens */
+  @media (min-width: 640px) {
+    .hidden-sm {
+      display: none;
+    }
+
+    .filterboxp1{
+        font-size: 1.2vw;
+    }
+
+    .Category1{
+        font-size: 1.1vw;
+    }
+
+  }
+  
+  .CollectionRight{
+    flex: 1;
+  }
+
+
+  .CollectionRight1 {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Aligns items with space between */
+    font-size: 0.5rem; /* text-base = 16px */
+    margin-bottom: 1rem;
+    margin-left: 20px; /* mb-4 = 16px */
+  }
+  
+  
+  .productsort{
+     border-width: 2px; /* border-2 */
+     max-height: 30px;
+  border-style: solid;
+  border-color: #d1d5db; /* border-gray-300 */
+  font-size:3vw; /* text-sm = 14px */
+  padding-left: 0.5rem; /* px-2 = 8px */
+  padding-right: 0.5rem; /* px-2 = 8px */
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-left: 70px;
+  }
+
+  @media (min-width: 640px) {
+    .CollectionRight1 {
+      margin-top: 0;
+    }
+    .productsort{
+     border-width: 2px; /* border-2 */
+     max-height: 50px;
+     border-style: solid;
+     border-color: #d1d5db; /* border-gray-300 */
+     font-size:1vw; /* text-sm = 14px */
+     padding-left: 0.5rem; /* px-2 = 8px */
+     padding-right: 0.5rem; /* px-2 = 8px */
+     margin-right: 100px;
+     margin-top: 20px;
+     }
+  }
+
+
+  .Mapproducts{
+        display: grid; /* Enables grid layout */
+        grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+        gap: 1rem; /* gap-4 = 16px (both row & column gap) */
+        row-gap: 1.5rem; /* gap-y-6 = 24px (only row gap) */
+        margin-left: 15px;
+      }
+      
+      /* Medium screens (≥768px) */
+      @media (min-width: 768px) {
+        .Mapproducts {
+          grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+        }
+      }
+      
+      /* Large screens (≥1024px) */
+      @media (min-width: 1024px) {
+        .Mapproducts {
+          grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+        }
+      }
+  

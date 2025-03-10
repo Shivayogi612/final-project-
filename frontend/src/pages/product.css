@@ -1,0 +1,263 @@
+/* Product Display */
+.productdisplay {
+  opacity: 0;
+}
+
+/* Main Product Card */
+.productcard {
+  border-top: 2px solid #ccc;
+  padding-top: 10px;
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
+}
+
+/* Product Data */
+.Productdata {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+  .Productdata {
+      flex-direction: row;
+      margin-top: 40px;
+      margin-left: 30px;
+  }
+}
+
+/* Product Image Section */
+.Productimg {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .Productimg {
+      flex-direction: row;
+  }
+}
+
+/* Thumbnail Images */
+.Productimg1 {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0;
+}
+
+@media (min-width: 640px) {
+  .Productimg1 {
+      flex-direction: column;
+      overflow-y: scroll;
+      width: 15%;
+      margin-right: 0px;
+      gap: 15px;
+  }
+}
+
+/* Thumbnail Image */
+.Productimg2 {
+  width: 22%;
+  height: 150px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .Productimg2 {
+      width: 100%;
+      height: 120px;
+  }
+}
+
+/* Main Product Image */
+.Productimage3 {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .Productimage3 {
+      width: 80%;
+  }
+}
+
+/* Product Image Styling (Moved Right) */
+.Productimage4 {
+  width: 70%;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 80px;
+  margin-bottom: 40px; /* Shifted to the right */
+}
+
+@media (min-width: 640px) {
+  .Productimage4 {
+      width: 85%;
+      height: 545px;
+      margin-left: 50px; /* Shifted more on larger screens */
+      border-radius: 0;
+  }
+}
+
+/* Product Info Section */
+.Productinfo {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Product Title */
+.Productinfoh1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Rating Section */
+.Productinfo1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.Productinfoimg {
+  width: 15px;
+  height: 15px;
+}
+
+.Productinfop1 {
+  padding-left: 8px;
+}
+
+/* Product Description */
+.Productdiscription {
+  margin-top: 15px;
+  color: #6B7280;
+}
+
+@media (min-width: 768px) {
+  .Productdiscription {
+      width: 50%;
+  }
+}
+
+/* Size Selection */
+.Productdiscription1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Size Buttons */
+.Selectsize {
+  display: flex;
+  gap: 8px;
+}
+
+.size-box {
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+.selected {
+  border-color: #f97316;
+}
+
+/* Add to Cart Button */
+.addtocart {
+  background-color: black;
+  color: white;
+  padding: 12px 28px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.addtocart:active {
+  background-color: #374151;
+}
+
+/* Horizontal Line */
+.hr1 {
+  margin-top: 25px;
+}
+
+@media (min-width: 640px) {
+  .hr1 {
+      width: 50%;
+      margin-top: 80px;
+  }
+}
+
+/* Description Box */
+.discription {
+  width: 85%;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  display: none;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 640px) {
+  .discription {
+      width: 75%;
+  }
+}
+
+/* Review Section */
+.Review {
+  margin-top: 80px;
+  margin-left: 180px;
+}
+
+.Reviewb1 {
+  margin-left: 350px;
+}
+
+/* Price Section */
+.ProductPriceSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Original Price */
+.OriginalPrice {
+  font-size: 18px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+/* Discounted Price */
+.DiscountedPrice {
+  font-size: 22px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Discount Tag */
+.DiscountTag {
+  background: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,62 @@
+.Newsletter{
+    text-align: center;
+}
+
+.Newsp1{
+    font-size: 1.5rem; /* text-2xl = 24px */
+  font-weight: 500; /* font-medium = Medium font weight */
+  color: #1f2937;
+}
+
+.Newsp2{
+    font-size: 1.2vw; 
+    color: #9ca3af; /* text-gray-400 = Light gray */
+    margin-top: 0.75rem;
+    margin-bottom: 50px; 
+}
+
+.newsinput{
+    
+        width: 50%;
+        height: 35px; /* w-full = Full width */
+        outline: none; 
+        padding-left: 10px;/* outline-none = Removes the outline */
+}
+
+@media (min-width: 640px) {
+    .newsinput {
+      flex: 1; 
+      outline: none;
+      width: 50%;/* sm:flex-1 = Allows the element to grow and take available space */
+    }
+  }   
+
+.submitbtn{
+    background-color: black; /* bg-black = Black background */
+    color: white; /* text-white = White text */
+    font-size: 0.75rem; /* text-xs = 12px */
+    padding-left: 1rem; /* px-10 = 40px */
+    padding-right: 1rem; /* px-10 = 40px */
+    padding-top: 0.7rem; /* py-4 = 16px */
+    padding-bottom: 0.7rem; /* py-4 = 16px */
+    margin-left: 20px;
+}
+
+.newsform{
+    width: 100%; /* w-full = Full width */
+    display: flex; /* flex = Enables flexbox */
+    align-items: center; /* items-center = Aligns items vertically */
+    gap: 0.75rem; /* gap-3 = 12px */
+    margin-left: auto; /* mx-auto = Centers horizontally */
+    margin-right: auto; /* mx-auto = Centers horizontally */
+    margin-top: 1.5rem; /* my-6 = 24px */
+    margin-bottom: 1.5rem; /* my-6 = 24px */
+    border: 1px solid; /* border = Default border (color depends on context) */
+    padding-left: 0.75rem; /* pl-3 = 12px */
+}
+
+@media (min-width: 640px) {
+    .newsform {
+      width: 50%; /* sm:w-1/2 = 50% width */
+    }
+  }
