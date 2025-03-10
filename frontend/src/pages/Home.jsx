@@ -30,7 +30,7 @@ const Home = () => {
           }}
         >
           <p>
-            🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥
+            🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥 25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥25% DISCOUNT ON ALL PRODUCTS! SHOP NOW! 🔥
           </p>
         </div>
       </div>
