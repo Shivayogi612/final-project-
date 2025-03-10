@@ -114,7 +114,6 @@ const ShopContextProvider = (props) => {
         
     }
 
-// ✅ Fixed getCartAmount (now returns a number)
 const getCartAmount = () => {
     let totalAmount = 0;
 
@@ -139,7 +138,7 @@ const getCartAmount = () => {
             console.log(`updating cart: ${backendUrl}/api/cart/get`, {  });
          const response =    await axios.post(`https://final-backend-two.vercel.app/api/cart/get`, {  }, {
                 headers: { 
-                    Authorization: `Bearer ${token}` // ✅ Correct way to send token
+                    Authorization: `Bearer ${token}` 
                 }
             });
 
