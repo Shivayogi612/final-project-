@@ -170,12 +170,12 @@ export const products = [
     name: "Women White & Purple Floral Satin Shirt",
     description: "A sophisticated satin shirt featuring a delicate white and purple floral print. Designed with a button-down front, long sleeves, and a relaxed fit, perfect for both formal and casual occasions.",
     price: 1199,
-    image: ["/mnt/data/new3image1.png"],
+    image: [new3image1,new3image2,new3image3],
     category: "Women",
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
     bestseller: true
-}
+},
 
 
     
