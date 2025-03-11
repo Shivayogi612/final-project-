@@ -72,6 +72,8 @@ import new1image3 from './new1image3.png'
 import new3image1 from './new3image1.png'
 import new3image2 from './new3image2.png'
 import new3image3 from './new3image3.png'
+import new2image1 from './new2image1.png'
+
 
 
 
@@ -178,7 +180,17 @@ export const products = [
 },
 
 
-    
+    {
+    _id: "ddddd",
+    name: "Women Multicolor Floral Print Satin Dress",
+    description: "A stunning satin dress featuring a vibrant multicolor floral print. Designed with a boat neckline, short sleeves, and a flattering silhouette, perfect for special occasions and elegant outings.",
+    price: 1599,
+    image: [new2image1],
+    category: "Women",
+    subCategory: "Dresses",
+    sizes: ["S", "M", "L", "XL"],
+    bestseller: true
+},
 
 
     {
