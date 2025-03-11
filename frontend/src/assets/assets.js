@@ -66,6 +66,9 @@ import new_img6 from './new_img6.png'
 import newimage_1 from './newimage_1.png'
 import newimage_2 from './newimage_2.png'
 import newimage_3 from './newimage_3.png'
+import new1image_1 from './new1image_1.png'
+import new2image_2 from './new2image_2.png'
+import new3image_3 from './new3image_3.png'
 
 
 
@@ -144,8 +147,23 @@ export const products = [
     category: "Women",
     subCategory: "Dresses",
     sizes: ["S", "M", "L", "XL"],
+    bestseller: true}
+    ,
+
+    {
+    _id: "bbbb1",
+    name: "Women Black & White Abstract Print Satin Pants",
+    description: "Elegant and stylish satin pants featuring a black and white abstract print. Designed with a comfortable fit, side pockets, and a smooth finish, perfect for casual and semi-formal wear.",
+    price: 1299,
+    image: ["/mnt/data/new1image_1.png"],
+    category: "Women",
+    subCategory: "Bottomwear",
+    sizes: ["S", "M", "L", "XL"],
     bestseller: true
-},
+}
+,
+
+    
 
 
     {
