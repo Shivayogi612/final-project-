@@ -67,8 +67,11 @@ import newimage_1 from './newimage_1.png'
 import newimage_2 from './newimage_2.png'
 import newimage_3 from './newimage_3.png'
 import new1image_1 from './new1image_1.png'
-import new2image_2 from './new2image_2.png'
-import new3image_3 from './new3image_3.png'
+import new1image2 from './new1image2.png'
+import new1image3 from './new1image3.png'
+import new3image1 from './new3image1.png'
+import new3image2 from './new3image2.png'
+import new3image3 from './new3image3.png'
 
 
 
@@ -155,13 +158,25 @@ export const products = [
     name: "Women Black & White Abstract Print Satin Pants",
     description: "Elegant and stylish satin pants featuring a black and white abstract print. Designed with a comfortable fit, side pockets, and a smooth finish, perfect for casual and semi-formal wear.",
     price: 1299,
-    image: ["/mnt/data/new1image_1.png"],
+    image: [new1image_1,new1image2,new1image3],
     category: "Women",
     subCategory: "Bottomwear",
     sizes: ["S", "M", "L", "XL"],
     bestseller: true
 }
 ,
+    {
+    _id: "ccccc",
+    name: "Women White & Purple Floral Satin Shirt",
+    description: "A sophisticated satin shirt featuring a delicate white and purple floral print. Designed with a button-down front, long sleeves, and a relaxed fit, perfect for both formal and casual occasions.",
+    price: 1199,
+    image: ["/mnt/data/new3image1.png"],
+    category: "Women",
+    subCategory: "Topwear",
+    sizes: ["S", "M", "L", "XL"],
+    bestseller: true
+}
+
 
     
 
