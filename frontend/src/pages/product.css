@@ -99,7 +99,7 @@
 @media (min-width: 640px) {
   .Productimage4 {
       width: 85%;
-      height: 545px;
+      height: 600px;
       margin-left: 50px; /* Shifted more on larger screens */
       border-radius: 0;
   }
