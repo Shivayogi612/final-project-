@@ -1,3 +1,4 @@
+/* Latest Collection Section */
 .latestcollection {
     margin: 2.5rem;
     z-index: -8;
@@ -36,33 +37,33 @@
     }
 }
 
-/* Product Grid */
+/* Product Grid - Ensures 2 products per row on mobile */
 .renderproduct {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Default: 2 columns for better mobile layout */
-    gap: 1rem;
-    row-gap: 1.5rem;
-    padding: 0 1rem; /* Adds some padding for better spacing */
+    gap: 0.8rem; /* Reduced gap for better fit */
+    padding: 0 0.5rem; /* Less padding for a compact look */
 }
 
-/* Ensure images don't overflow */
+/* Product Cards */
 .renderproduct img {
     max-width: 100%;
     height: auto;
     border-radius: 8px; /* Soft rounded corners for better aesthetics */
 }
 
-/* On screens smaller than 480px (Extra Small Mobiles), show 1 column */
-@media (max-width: 480px) {
+/* On screens smaller than 400px (Very Small Mobiles), keep 2 columns but scale down */
+@media (max-width: 400px) {
     .renderproduct {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, minmax(120px, 1fr)); /* Ensures items don't become too small */
+        gap: 0.5rem;
     }
 }
 
-/* On small screens (640px and above), set 2 columns */
+/* On small screens (640px and above), keep 2 columns but allow flexibility */
 @media (min-width: 640px) {
     .renderproduct {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(150px, 1fr)); /* Slightly bigger */
     }
 }
 
