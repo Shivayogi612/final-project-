@@ -1,66 +1,89 @@
-.latestcollection{
-    margin:2.5rem ;
+.latestcollection {
+    margin: 2.5rem;
     z-index: -8;
 }
 
-.latestcollection1{
-    text-align: center; /* text-center = Centers text */
-  padding-top: 2rem; /* py-8 = 32px */
-  padding-bottom: 2rem; /* py-8 = 32px */
-  font-size: 1.875rem;
-  z-index: -8;
-
+/* Header Styling */
+.latestcollection1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.875rem;
+    z-index: -8;
 }
 
+/* Paragraph Text Styling */
 .latestp1 {
-    width: 75%; /* w-3/4 = 75% of the parent width */
-    margin: auto; /* m-auto = Centers the element horizontally */
-    font-size: 0.75rem; /* text-xs = 12px */
-  }
-  
-  /* On small screens (640px and above), increase font size */
-  @media (min-width: 640px) {
-    .latestp1 {
-      font-size: 0.875rem; /* sm:text-sm = 14px */
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-  
-  /* On medium screens (768px and above), increase font size */
-  @media (min-width: 768px) {
-    .latestp1 {
-      font-size: 1rem; /* md:text-base = 16px */
-    }
-  }
+    width: 90%; /* Increased width for better readability on mobile */
+    max-width: 600px; /* Prevents text from stretching too wide on larger screens */
+    margin: auto;
+    font-size: 0.85rem;
+    line-height: 1.5; /* Improves readability */
+    text-align: center;
+}
 
-  .renderproduct {
-    display: grid; /* Enables CSS Grid */
-    grid-template-columns: repeat(2, 1fr); /* grid-cols-2 = 2 equal columns */
-    gap: 1rem; /* gap-4 = 16px */
-    row-gap: 1.5rem; /* gap-y-6 = 24px */
-  }
-  
-  /* On small screens (640px and above), set 3 columns */
-  @media (max-width: 640px) {
-    .renderproduct {
-      grid-template-columns: repeat(2, 1fr); 
+/* Adjust font size for small screens */
+@media (min-width: 640px) {
+    .latestp1 {
+        font-size: 0.9rem;
     }
-  }
+}
 
-  
-  /* On medium screens (768px and above), set 4 columns */
-  @media (min-width: 768px) {
-    .renderproduct {
-      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-4 */
+/* Adjust font size for medium screens */
+@media (min-width: 768px) {
+    .latestp1 {
+        font-size: 1rem;
     }
-  }
-  
-  /* On large screens (1024px and above), set 5 columns */
-  @media (min-width: 1024px) {
+}
+
+/* Product Grid */
+.renderproduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default: 2 columns for better mobile layout */
+    gap: 1rem;
+    row-gap: 1.5rem;
+    padding: 0 1rem; /* Adds some padding for better spacing */
+}
+
+/* Ensure images don't overflow */
+.renderproduct img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Soft rounded corners for better aesthetics */
+}
+
+/* On screens smaller than 480px (Extra Small Mobiles), show 1 column */
+@media (max-width: 480px) {
     .renderproduct {
-      grid-template-columns: repeat(5, 1fr); 
-      margin-left: 20px;/* lg:grid-cols-5 */
+        grid-template-columns: repeat(1, 1fr);
     }
-  }
-  
+}
+
+/* On small screens (640px and above), set 2 columns */
+@media (min-width: 640px) {
+    .renderproduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* On medium screens (768px and above), set 3 columns */
+@media (min-width: 768px) {
+    .renderproduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* On large screens (1024px and above), set 4 columns */
+@media (min-width: 1024px) {
+    .renderproduct {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* On extra-large screens (1200px and above), set 5 columns */
+@media (min-width: 1200px) {
+    .renderproduct {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 20px;
+    }
+}
