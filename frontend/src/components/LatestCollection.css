@@ -101,6 +101,13 @@
         font-size: 0.9rem;
     }
 
+    .productimage {
+    width: 50%;
+    height: 140px; /* Fixed height for uniform size */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
     .productp2 {
         font-size: 1.1rem;
     }
