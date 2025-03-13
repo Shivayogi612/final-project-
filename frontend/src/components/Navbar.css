@@ -3,15 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding: 10px 20px;
   font-weight: 500;
-  height: 100px;
+  height: 80px;
+  background: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
 .logo {
-  width: 20vw;
+  width: 50px; /* Fixed width for better control */
+  max-width: 12vw;
 }
 
 /* Navigation Links */
@@ -20,13 +22,13 @@
   gap: 45px;
   font-size: 0.875rem;
   color: #374151;
-  margin-right: 10px;
 }
 
 .Navul > a {
   text-decoration: none;
   font-size: 1.2vw;
   color: black;
+  font-weight: 600;
 }
 
 /* Navigation Links Wrapper */
@@ -39,24 +41,24 @@
 
 /* Search Icon */
 .searchicon {
-  width: 3.5vw;
+  width: 25px; /* Consistent with other icons */
+  max-width: 1.5vw;
   cursor: pointer;
 }
 
 /* Responsive Styles */
 @media (min-width: 640px) {
   .Navul {
-      display: flex;
+    display: flex;
   }
   .Nav {
-      margin-right: 90px;
-      margin-left: 70px;
+    padding: 10px 70px;
   }
   .logo {
-      width: 12vw;
+    width: 12vw;
   }
   .searchicon {
-      width: 1.5vw;
+    width: 1.5vw;
   }
 }
 
@@ -73,7 +75,7 @@
 }
 
 .profileicon {
-  width: 1.25rem;
+  width: 25px;
   cursor: pointer;
 }
 
@@ -82,11 +84,12 @@
   display: none;
   position: absolute;
   right: 0;
-  padding-top: 1rem;
   background-color: #f1f5f9;
   color: #6b7280;
-  width: 11rem;
-  border-radius: 0.25rem;
+  width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .group:hover .dropdown-menu {
@@ -102,20 +105,18 @@
 
 .menup {
   cursor: pointer;
-  font-size: 3vw;
-  padding: 5px 10px;
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 .menup:hover {
+  background-color: #f3f4f6;
   color: black;
 }
 
 @media (min-width: 640px) {
   .menuicon {
-      display: none;
-  }
-  .menup {
-      font-size: 1vw;
+    display: none;
   }
 }
 
@@ -125,39 +126,39 @@
 }
 
 .carticon {
-  width: 1.25rem;
-  min-width: 1.25rem;
+  width: 25px;
+  min-width: 25px;
 }
 
 .cartno {
   position: absolute;
-  right: -5px;
-  top: 5px;
-  width: 1rem;
+  right: -8px;
+  top: -5px;
+  width: 16px;
+  height: 16px;
   text-align: center;
-  line-height: 1rem;
+  line-height: 16px;
   background-color: black;
   color: white;
-  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 /* Mobile Menu Icon */
 .menuicon {
-  width: 1.25rem;
+  width: 25px;
   cursor: pointer;
 }
 
-/* 🔹 SIDE MENU STYLES (Fixed & Improved) */
+/* SIDE MENU STYLES */
 .sidemenu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
-  backdrop-filter: blur(8px); /* Blurred background effect */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -216,13 +217,13 @@ body.menu-open {
 }
 
 .sidemenu1 a:hover {
-  color: #6a1b9a; /* Purple hover effect */
+  color: #6a1b9a;
   background-color: #f3f3f3;
 }
 
 /* Responsive Improvements */
 @media (max-width: 640px) {
   .sidemenu1 {
-      width: 80%;
+    width: 80%;
   }
 }
