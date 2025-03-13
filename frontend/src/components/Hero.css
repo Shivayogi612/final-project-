@@ -5,6 +5,7 @@
   overflow: hidden;
 }
 
+/* Full-width background image */
 .bannerimg {
   position: absolute;
   width: 100%;
@@ -14,24 +15,33 @@
   transition: opacity 1.5s ease-in-out;
 }
 
-/* Show the active image */
+/* Show active image */
 .bannerimg.active {
   opacity: 1;
 }
 
-/* 🌟 Responsive Design */
-@media (max-width: 768px) {
+/* 🌟 Responsive Adjustments */
+@media (max-width: 1024px) { 
   .hero {
-      height: 60vh; /* Reduce height on tablets */
-  }
-  .bannerimg{
-    position: absolute;
-    z-index: -9;
+    height: 75vh; /* Slightly smaller for laptops */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) { 
   .hero {
-      height: 50vh; /* Further reduce height on mobile screens */
+    height: 60vh; /* Reduce height for tablets */
+  }
+}
+
+@media (max-width: 480px) { 
+  .hero {
+    height: 50vh; /* Further reduce height for smaller mobiles */
+  }
+}
+
+/* Specifically for Samsung A14 (1080px width) */
+@media (max-width: 1080px) and (max-height: 2408px) { 
+  .hero {
+    height: 65vh; /* Adjust height for better visibility on Samsung A14 */
   }
 }
