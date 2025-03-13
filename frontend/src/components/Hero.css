@@ -3,16 +3,22 @@
   width: 100%;
   height: 90vh; /* Default height for larger screens */
   overflow: hidden;
+  background-color: white; /* Prevents blank gaps on non-white images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Full-width background image */
+/* Full-width background image with full content visibility */
 .bannerimg {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Show full image without cropping */
+  object-position: center; /* Keep image centered */
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
+  background-color: white; /* Prevent blank spaces */
 }
 
 /* Show active image */
