@@ -3,22 +3,16 @@
   width: 100%;
   height: 90vh; /* Default height for larger screens */
   overflow: hidden;
-  background-color: white; /* Prevents blank gaps on non-white images */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Full-width background image with full content visibility */
+/* Full-width background image */
 .bannerimg {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Show full image without cropping */
-  object-position: center; /* Keep image centered */
+  object-fit: contain;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
-  background-color: white; /* Prevent blank spaces */
 }
 
 /* Show active image */
@@ -50,4 +44,4 @@
   .hero {
     height: 65vh; /* Adjust height for better visibility on Samsung A14 */
   }
-}
+}   
