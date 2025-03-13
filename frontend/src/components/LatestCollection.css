@@ -11,75 +11,65 @@
     z-index: -8;
 }
 
-/* Paragraph Text Styling */
 .latestp1 {
-    width: 90%; /* Increased width for better readability on mobile */
-    max-width: 600px; /* Prevents text from stretching too wide on larger screens */
+    width: 90%; 
+    max-width: 600px;
     margin: auto;
     font-size: 0.85rem;
-    line-height: 1.5; /* Improves readability */
+    line-height: 1.5; 
     text-align: center;
 }
 
-/* Adjust font size for small screens */
 @media (min-width: 640px) {
     .latestp1 {
         font-size: 0.9rem;
     }
 }
 
-/* Adjust font size for medium screens */
 @media (min-width: 768px) {
     .latestp1 {
         font-size: 1rem;
     }
 }
 
-/* Product Grid */
 .renderproduct {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Default: 2 columns for better mobile layout */
+    grid-template-columns: repeat(1, 1fr); 
     gap: 1rem;
     row-gap: 1.5rem;
-    padding: 0 1rem; /* Adds some padding for better spacing */
+    padding: 0 1rem; 
 }
 
-/* Ensure images don't overflow */
 .renderproduct img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Soft rounded corners for better aesthetics */
+    border-radius: 8px;
 }
 
-/* On screens smaller than 480px (Extra Small Mobiles), show 1 column */
 @media (max-width: 480px) {
     .renderproduct {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* On small screens (640px and above), set 2 columns */
 @media (min-width: 640px) {
     .renderproduct {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* On medium screens (768px and above), set 3 columns */
 @media (min-width: 768px) {
     .renderproduct {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* On large screens (1024px and above), set 4 columns */
 @media (min-width: 1024px) {
     .renderproduct {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* On extra-large screens (1200px and above), set 5 columns */
 @media (min-width: 1200px) {
     .renderproduct {
         grid-template-columns: repeat(5, 1fr);
