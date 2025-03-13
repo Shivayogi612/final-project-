@@ -90,6 +90,14 @@
         font-size: 0.75rem;
     }
 
+    .renderproduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 0.8rem;
+    overflow:hidden;
+    padding: 0 0.5rem;
+}
+
     .productp2 {
         font-size: 0.9rem;
     }
