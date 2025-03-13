@@ -1,144 +1,228 @@
-/* 🌟 Main Collection Wrapper */
-.latestcollection {
-    margin: 2rem 1rem; /* Reduced margin for better mobile fit */
-    z-index: -8;
+/* Navbar Styles */
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  height: 100px;
 }
 
-/* 🌟 Collection Title */
-.latestcollection1 {
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1.75rem;
+/* Logo */
+.logo {
+  width: 20vw;
 }
 
-/* 🌟 Collection Description */
-.latestp1 {
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    text-align: center;
+/* Navigation Links */
+.Navul {
+  display: none;
+  gap: 45px;
+  font-size: 0.875rem;
+  color: #374151;
+  margin-right: 10px;
 }
 
-/* 🌟 Product Grid */
-.renderproduct {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 0.8rem;
-    padding: 0 0.5rem;
+.Navul > a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: black;
 }
 
-/* 🌟 Individual Product Item */
-.productitem {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease-in-out;
+/* Navigation Links Wrapper */
+.Navlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1vw;
 }
 
-/* Hover effect */
-.productitem:hover {
-    transform: translateY(-5px);
+/* Search Icon */
+.searchicon {
+  width: 3.5vw;
+  cursor: pointer;
 }
 
-/* 🌟 Product Image */
-.productimage {
-    width: 100%;
-    height: 180px; /* Fixed height for uniform size */
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* 🌟 Product Info */
-.productinfo {
-    text-align: center;
-    margin-top: 8px;
-}
-
-/* 🌟 Product Name */
-.productp1 {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #222;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; /* Adds "..." for long names */
-    width: 90%;
-    display: block;
-}
-
-/* 🌟 Product Price */
-.productp2 {
-    font-size: 1rem;
-    color: orange;
-    font-weight: bold;
-    margin-top: 4px;
-}
-
-/* 🌟 Responsive Design */
-
-/* On extra-small screens (below 400px), reduce font size */
-@media (max-width: 400px) {
-    .productp1 {
-        font-size: 0.75rem;
-    }
-
-    .renderproduct {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 0.8rem;
-    overflow:hidden;
-    padding: 0 0.5rem;
-}
-
-    .productp2 {
-        font-size: 0.9rem;
-    }
-}
-
-/* On tablets (640px and above), increase font size */
+/* Responsive Styles */
 @media (min-width: 640px) {
-    .productp1 {
-        font-size: 0.9rem;
-    }
-
-    .productimage {
-    width: 50%;
-    height: 140px; /* Fixed height for uniform size */
-    object-fit: cover;
-    border-radius: 8px;
+  .Navul {
+      display: flex;
+  }
+  .Nav {
+      margin-right: 90px;
+      margin-left: 70px;
+  }
+  .logo {
+      width: 12vw;
+  }
+  .searchicon {
+      width: 1.5vw;
+  }
 }
 
-    .productp2 {
-        font-size: 1.1rem;
-    }
+/* Navbar Right Section */
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-/* On medium screens (768px and above), set 3 columns */
-@media (min-width: 768px) {
-    .renderproduct {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Profile Dropdown */
+.group {
+  position: relative;
 }
 
-/* On large screens (1024px and above), set 4 columns */
-@media (min-width: 1024px) {
-    .renderproduct {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.profileicon {
+  width: 1.25rem;
+  cursor: pointer;
 }
 
-/* On extra-large screens (1200px and above), set 5 columns */
-@media (min-width: 1200px) {
-    .renderproduct {
-        grid-template-columns: repeat(5, 1fr);
-    }
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding-top: 1rem;
+  background-color: #f1f5f9;
+  color: #6b7280;
+  width: 11rem;
+  border-radius: 0.25rem;
 }
 
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Menu Items */
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menup {
+  cursor: pointer;
+  font-size: 3vw;
+  padding: 5px 10px;
+}
+
+.menup:hover {
+  color: black;
+}
+
+@media (min-width: 640px) {
+  .menuicon {
+      display: none;
+  }
+  .menup {
+      font-size: 1vw;
+  }
+}
+
+/* Cart Section */
+.cart {
+  position: relative;
+}
+
+.carticon {
+  width: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.cartno {
+  position: absolute;
+  right: -5px;
+  top: 5px;
+  width: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  background-color: black;
+  color: white;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  font-size: 8px;
+}
+
+/* Mobile Menu Icon */
+.menuicon {
+  width: 1.25rem;
+  cursor: pointer;
+}
+
+/* 🔹 SIDE MENU STYLES (Fixed & Improved) */
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+  backdrop-filter: blur(8px); /* Blurred background effect */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidemenu.visible {
+  transform: translateX(0);
+}
+
+/* Inner Side Menu */
+.sidemenu1 {
+  background: white;
+  width: 75%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Prevent scrolling when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Back Button */
+.sidemenu2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+
+.sidemenu2 img {
+  width: 20px;
+}
+
+/* Side Menu Links */
+.sidemenu1 a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #e5e7eb;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidemenu1 a:hover {
+  color: #6a1b9a; /* Purple hover effect */
+  background-color: #f3f3f3;
+}
+
+/* Responsive Improvements */
+@media (max-width: 640px) {
+  .sidemenu1 {
+      width: 80%;
+  }
+}
