@@ -14,7 +14,7 @@ const LatestCollection = () => {
   const collectionRef = useRef(null);
 
   useEffect(() => {
-    setLatestProducts(products.slice(2, 12));
+    setLatestProducts(products.slice(2, 8));
 
     // GSAP Animation for smooth entrance
     gsap.from(collectionRef.current, {
