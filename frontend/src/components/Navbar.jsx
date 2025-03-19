@@ -31,7 +31,6 @@ const Navbar = () => {
             <ul className='Navul'>
                 <Link to="/" className='Navlink'><h4>HOME</h4></Link>
                 <Link to="/collection" className='Navlink'><h4>COLLECTION</h4></Link>
-                <Link to="/about" className='Navlink'><h4>ABOUT</h4></Link>
                 <Link to="/contact" className='Navlink'><h4>CONTACT</h4></Link>
             </ul>
 
@@ -42,7 +41,6 @@ const Navbar = () => {
                     {token && (
                         <div className='dropdown-menu'>
                             <div className='menu1'>
-                                <p className='menup'>My Profile</p>
                                 <p onClick={() => navigate('/orders')} className='menup'>Orders</p>
                                 <p onClick={logout} className='menup'>Logout</p>
                             </div>
@@ -65,7 +63,6 @@ const Navbar = () => {
                     </div>
                     <Link className='sidea' to="/" onClick={() => setVisible(false)}>HOME</Link>
                     <Link className='sidea' to="/collection" onClick={() => setVisible(false)}>COLLECTION</Link>
-                    <Link className='sidea' to="/about" onClick={() => setVisible(false)}>ABOUT</Link>
                     <Link className='sidea' to="/contact" onClick={() => setVisible(false)}>CONTACT</Link>
                 </div>
             </div>
