@@ -14,9 +14,9 @@ const LatestCollection = () => {
   const collectionRef = useRef(null);
 
   useEffect(() => {
-    setLatestProducts(products.slice(2,12));
+    setLatestProducts(products.slice(2, 12));
 
-    // GSAP Animation for smooth entrance
+    // GSAP Scroll Animation
     gsap.from(collectionRef.current, {
       opacity: 0,
       y: 50,
@@ -28,6 +28,22 @@ const LatestCollection = () => {
       },
     });
   }, []);
+
+  useEffect(() => {
+    // GSAP Hover Tilt Effect
+    const cards = document.querySelectorAll(".productitem");
+    cards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 30;
+        gsap.to(card, { rotateY: xAxis, rotateX: yAxis, duration: 0.4 });
+      });
+
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, { rotateY: 0, rotateX: 0, duration: 0.5 });
+      });
+    });
+  }, [latestProducts]);
 
   return (
     <div className="latestcollection" ref={collectionRef}>
