@@ -16,7 +16,7 @@ const LatestCollection = () => {
   useEffect(() => {
     setLatestProducts(products.slice(2, 12));
 
-    // GSAP Scroll Animation
+    // GSAP Animation for smooth entrance
     gsap.from(collectionRef.current, {
       opacity: 0,
       y: 50,
@@ -30,42 +30,20 @@ const LatestCollection = () => {
   }, []);
 
   useEffect(() => {
-  const cards = document.querySelectorAll(".productitem");
-
-  cards.forEach((card) => {
-    card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect();
-      const xAxis = (e.clientX - rect.left - rect.width / 2) / 50; // Reduced intensity
-      const yAxis = (e.clientY - rect.top - rect.height / 2) / 50;
-
-      gsap.to(card, {
-        rotateY: xAxis * 5, // Limits rotation angle
-        rotateX: -yAxis * 5, 
-        scale: 1.05, // Adds slight scaling for better effect
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    });
-
-    card.addEventListener("mouseleave", () => {
-      gsap.to(card, {
-        rotateY: 0,
-        rotateX: 0,
-        scale: 1, // Reset scale
-        duration: 0.4,
-        ease: "power2.out",
-      });
-    });
-  });
-
-  return () => {
+    // GSAP Hover Tilt Effect (Smoother and Less Rotation)
+    const cards = document.querySelectorAll(".productitem");
     cards.forEach((card) => {
-      card.removeEventListener("mousemove", () => {});
-      card.removeEventListener("mouseleave", () => {});
-    });
-  };
-}, [latestProducts]);
+      card.addEventListener("mousemove", (e) => {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 50; // Reduced effect
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 50; // Reduced effect
+        gsap.to(card, { rotateY: xAxis, rotateX: yAxis, duration: 0.3 });
+      });
 
+      card.addEventListener("mouseleave", () => {
+        gsap.to(card, { rotateY: 0, rotateX: 0, duration: 0.4 });
+      });
+    });
+  }, [latestProducts]);
 
   return (
     <div className="latestcollection" ref={collectionRef}>
@@ -96,3 +74,4 @@ const LatestCollection = () => {
 };
 
 export default LatestCollection;
+
