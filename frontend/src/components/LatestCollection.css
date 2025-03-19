@@ -29,6 +29,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  justify-content: center; /* Centers the grid */
+  margin: 0 auto; /* Centers everything */
+  max-width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -54,6 +57,7 @@
   position: relative;
   text-align: center;
   cursor: pointer;
+  margin-right: 10px; /* Prevents right side overflow */
 }
 
 .productitem:hover {
@@ -104,4 +108,5 @@
   background: linear-gradient(to right, #ff4b2b, #ff416c);
   transform: scale(1.05);
 }
+
 
