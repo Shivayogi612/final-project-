@@ -1,11 +1,11 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh; /* Default height for larger screens */
+  height: 90vh; 
   overflow: hidden;
+  margin-top: 40px;
 }
 
-/* Full-width background image */
 .bannerimg {
   position: absolute;
   width: 100%;
@@ -20,26 +20,24 @@
   opacity: 1;
 }
 
-/* 🌟 Responsive Adjustments */
 @media (max-width: 1024px) { 
   .hero {
-    height: 75vh; /* Slightly smaller for laptops */
+    height: 75vh; 
   }
 }
 
 @media (max-width: 768px) { 
   .hero {
-    height: 60vh; /* Reduce height for tablets */
+    height: 60vh;
   }
 }
 
 @media (max-width: 480px) { 
   .hero {
-    height: 50vh; /* Further reduce height for smaller mobiles */
+    height: 50vh; 
   }
 }
 
-/* Specifically for Samsung A14 (1080px width) */
 @media (max-width: 1080px) and (max-height: 2408px) { 
   .hero {
     height: 65vh; /* Adjust height for better visibility on Samsung A14 */
