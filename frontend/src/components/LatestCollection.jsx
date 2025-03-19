@@ -14,7 +14,7 @@ const LatestCollection = () => {
   const collectionRef = useRef(null);
 
   useEffect(() => {
-    setLatestProducts(products.slice(2, 8));
+    setLatestProducts(products.slice(2,10));
 
     // GSAP Animation for smooth entrance
     gsap.from(collectionRef.current, {
@@ -29,22 +29,6 @@ const LatestCollection = () => {
     });
   }, []);
 
-  useEffect(() => {
-    // GSAP Hover Tilt Effect (Smoother and Less Rotation)
-    const cards = document.querySelectorAll(".productitem");
-    cards.forEach((card) => {
-      card.addEventListener("mousemove", (e) => {
-        let xAxis = (window.innerWidth / 2 - e.pageX) / 50; // Reduced effect
-        let yAxis = (window.innerHeight / 2 - e.pageY) / 50; // Reduced effect
-        gsap.to(card, { rotateY: xAxis, rotateX: yAxis, duration: 0.3 });
-      });
-
-      card.addEventListener("mouseleave", () => {
-        gsap.to(card, { rotateY: 0, rotateX: 0, duration: 0.4 });
-      });
-    });
-  }, [latestProducts]);
-
   return (
     <div className="latestcollection" ref={collectionRef}>
       <div className="latestcollection1">
@@ -58,7 +42,7 @@ const LatestCollection = () => {
       {/* Rendering Products */}
       <div className="renderproduct">
         {latestProducts.map((item, index) => (
-          <Link className="productitem" to={`/product/${item._id}`} key={index}>
+          <Link className="productitem" to={/product/${item._id}} key={index}>
             <div className="productitem1">
               <img className="productimage" src={item.image[0]} alt={item.name} />
             </div>
@@ -74,4 +58,3 @@ const LatestCollection = () => {
 };
 
 export default LatestCollection;
-
