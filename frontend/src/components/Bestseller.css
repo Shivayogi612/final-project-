@@ -28,7 +28,7 @@
 /* Bestseller Products Grid */
 .bestseller-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /* Ensures responsive grid */
   gap: 5vw;
   justify-content: center;
   align-items: stretch;
