@@ -68,13 +68,12 @@
   .bestseller-grid {
       grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
       gap: 1rem;
-      margin-left: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .bestseller-grid {
-      grid-template-columns: repeat(2, 1fr); /* Single column on mobile */
+    grid-template-columns: repeat(2, 1fr); /* Single column on mobile */
     margin:0;
   }
 }
