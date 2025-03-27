@@ -75,5 +75,6 @@
 @media (max-width: 480px) {
   .bestseller-grid {
       grid-template-columns: repeat(2, 1fr); /* Single column on mobile */
+    margin:0;
   }
 }
