@@ -71,4 +71,16 @@
     font-weight: bold;
     color: #ff6600;
   }
-  
+
+   @media (min-width: 1024px) {
+    .productitem {
+    width: 250px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+    background: none;
+  }
+  }
