@@ -24,7 +24,7 @@ const Footer = () => {
              <a href="/Contact">Contact Us</a> 
           </ul>
         </div>
-
+        
         {/* Contact Section */}
         <div className="footer-section">
           <h3 className="footer-heading">Get in Touch</h3>
