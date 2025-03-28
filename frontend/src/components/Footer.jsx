@@ -30,7 +30,7 @@ const Footer = () => {
           <h3 className="footer-heading">Get in Touch</h3>
           <ul className="footer-links">
             <a>📞 +91 1234567890</a>
-            <a >✉️ contact@foreveryou.com</a>
+            <a >✉️ foreverclothing123@gmail.com</a>
           </ul>
         </div>
       </div>
