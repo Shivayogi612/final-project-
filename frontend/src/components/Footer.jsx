@@ -22,8 +22,6 @@ const Footer = () => {
           <a href="/About">Home</a> 
              <a href="/Collection">Collections</a> 
              <a href="/Contact">Contact Us</a> 
-
-           
           </ul>
         </div>
 
