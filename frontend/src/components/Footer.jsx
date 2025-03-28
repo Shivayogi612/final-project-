@@ -41,7 +41,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <hr />
         <p className="footer-copyright">
-          © 2024 Forever. All Rights Reserved.
+          © 2025 Forever. All Rights Reserved.
         </p>
       </div>
     </footer>
